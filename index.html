@@ -47,18 +47,11 @@
         var weeksLeft = (52 * 90) - (age * 52);
         var monthsLeft = (12 * 90) - (age * 12);
 
-        if(age > 0){ 
+      if(age > 0 && age <= 90 ){ 
           document.getElementById("output").innerHTML = "You have " + daysLeft + " days, " + weeksLeft + " weeks, and " + monthsLeft + " months left.";
         }
         else{
-            alert("Enter age more than 0");
-        }
-
-        if(age <= 90){
-            document.getElementById("output").innerHTML = "You have " + daysLeft + " days, " + weeksLeft + " weeks, and " + monthsLeft + " months left.";
-        }
-        else{
-            alert("Enter age more than 90");
+            alert("Age must be more than 0 and less than 90");
         }
     }
     </script>
